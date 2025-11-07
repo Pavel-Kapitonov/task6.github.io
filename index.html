@@ -1,0 +1,258 @@
+<!-- Капитонов Павел -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Основная страница</title>
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="Image/x-icon" href="img/favicon.ico" rel="icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light custom-header-bg">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img class="logo me-2 rounded-4" src="img/logo2.png" alt="Логотип" style="height: 100px; width: 100px;"> 
+                    <h1 class="fw-bold fs-5 text-dark mb-0 ms-3">Основная страница</h1> 
+                    </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+                <div class="collapse navbar-collapse custom-dropdown-bg z-1" id="navbarNav">
+                  <div class="container-fluid">
+
+                    <ul class="navbar-nav ms-auto"> 
+                        <li class="nav-item"><a class="nav-link" href="#hyperlinks">Гиперссылки</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#table">Таблица</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#form">Форма</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <main class="container my-4 d-flex flex-column mx-auto">
+      <div class="content-heade order-1">
+      <h1 class="fw-bold mt-5 fs-2">Задание 4.</h1>
+      <p class="mb-0">Переделать сайт из прошлого задания 3 с помощью фреймворка Bootstrap</p> 
+      <p class="mb-0">Работу выполнил: Капитонов Павел ПМ 21/2</p> 
+      </div>
+
+      <!-- Гиперсыллки -->
+      
+      <div class="order-3 order-md-2 p-2 mylinks">
+
+        <h2 class="fw-bold mt-5 fs-2" id="hyperlinks">Список гиперсcылок</h2>
+        <ol class="list-group list-group-flush list-group-numbered mb-4">
+        <li class="list-group-item"><a href="http://kubsu.ru">Кубгу HTTP</a></li>
+        <li class="list-group-item"><a href="https://www.kubsu.ru/ ">Кубгу HTTPS</a></li>
+        <li class="list-group-item"><a href="https://www.kubsu.ru/"><img src="https://upload.wikimedia.org/wikipedia/ru/a/a2/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%9A%D1%83%D0%B1%D0%93%D0%A3.png" width="300" height="300" alt="Кубгу"></a></li>
+        <li class="list-group-item"><a href="./index.html">Перейти на внутреннюю страницу</a></li>
+        <li class="list-group-item"><a href="index.html">Перейти на главную страницу</a></li>
+        <li class="list-group-item"><a href="#element_id">Ссылка на фрагмент страницы</a></li>
+        <li class="list-group-item"><a href="http://example.com?param1=value1&param2=value2&param3=value3">Ссылка с 3-мя параметрами</a></li>
+        <li class="list-group-item"><a href="index.html?id=123">Перейти на id=123</a></li>
+        <li class="list-group-item"><a href="inside.html">Ссылка на страницу в каталоге</a></li>
+        <li class="list-group-item"><a href="./about/example.html">Ссылка в каталоге about</a></li>
+        <li class="list-group-item"><a href="../index.html">На страницу в каталоге уровнем выше</a></li>
+        <li class="list-group-item"><a href="../../index.html">На страницу в каталоге 2 уровнями выше</a></li>
+        <li class="list-group-item">Это <a href="index.html" class="ms-1 me-1">контекстная ссылка</a> в параграфе</li>
+        <li class="list-group-item"><a href="https://kubsu.ru/index.php#region-user-second">Перейти к разделу на другом сайте</a></li>
+        <li class="list-group-item">
+          <img src="img/map-image.jpg" alt="Картинка с областями" usemap="#my-map">
+          <map name="my-map">
+              <area shape="rect" coords="0,0,100,100" href="index.html" alt="Прямоугольник">
+              <area shape="circle" coords="150,150,50" href="index.html" alt="Круг">
+          </map>
+        </li>
+        <li class="list-group-item"><a href="">Пустая ссылка</a></li>
+        <li class="list-group-item"><a>Ссылка без href</a></li>
+        <li class="list-group-item"><a href="https://www.kubsu.ru/" rel="nofollow">Ссылка с запретом перехода</a></li>
+        <li class="list-group-item"><!--noindex--><a href="">Ссылка запрещенная для индексации</a><!--/noindex--></li>
+        <li class="list-group-item">
+          <ol class="list-group list-group-flush mt-2">
+            <li class="list-group-item"><a href="index.html" title="Первая">Ссылка с номером 1</a></li>
+            <li class="list-group-item"><a href="index.html" title="Вторая">Ссылка с номером 2</a></li>
+          </ol>
+        </li>
+        <li class="list-group-item"><a href="ftp://username:password@example.ru/file.zip">Скачать файл</a></li>
+        </ol>
+      </div>
+      
+
+
+      <!-- Таблица -->
+
+      <div class="order-2 order-md-3 p-2 bd-highlight tablica">
+      <h2 id="table" class="mt-4 mb-3 fw-bold fs-2">Таблица</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered table-hover">
+        <thead>
+
+          <tr>
+            <th>Имя</th>
+            <th>Возраст</th>
+            <th>Город</th>
+            <th>Место работы</th>
+          </tr>
+
+        </thead>
+        <tbody>
+
+          <tr>
+            <td>Иван</td>
+            <td>30</td>
+            <td>Москва</td>
+            <td rowspan="2">ВК</td>
+          </tr>
+
+          <tr>
+            <td>Мария</td>
+            <td>25</td>
+            <td>Санкт-Петербург</td>
+          </tr>
+
+          <tr>
+            <td>Дмитрий</td>
+            <td>21</td>
+            <td rowspan="2">Краснодар</td>
+            <td>Медрокет</td>
+          </tr>
+
+          <tr>
+            <td>Юрий</td>
+            <td>26</td>
+            <td>Initlab</td>
+          </tr>
+
+          <tr>
+            <td>Роман</td>
+            <td>58</td>
+            <td>Воркута</td>
+            <td>СеверВахт</td>
+          </tr>
+
+          <tr>
+            <td>Лёха</td>
+            <td>32</td>
+            <td>СикретСити</td>
+            <td>Гугл</td>
+          </tr>
+        </tbody>
+        </table>
+      </div>
+
+      </div> <!-- Конец Таблица -->
+      
+    
+
+      <!-- Форма -->
+
+      <div class="p-2 order-4 bd-highlight forma">
+              <h2 id="form" class="mt-4 mb-4 fw-bold fs-2">Форма</h2>
+      <form action="/"
+      method="POST">
+
+      <div class="mb-3">
+              <label for="fieldName1" class="form-label">ФИО:</label>
+              <input name="field-name-1" id="fieldName1" class="form-control"
+                  placeholder="Васькин Василий Васильевич" />
+      </div>
+
+      <div class="mb-3">
+              <label for="fieldTel" class="form-label">Телефон:</label>
+              <input name="field-tel" id="fieldTel" type="tel" class="form-control"
+                  placeholder="+7**********" />
+      </div>
+
+      <div class="mb-3">
+              <label for="fieldEmail" class="form-label">Текстовое поле email:</label>
+              <input name="field-email" id="fieldEmail" type="email" class="form-control"
+                  placeholder="Введите вашу почту" />
+          </div>
+
+          <div class="mb-3">
+              <label for="fieldDate" class="form-label">Дата рождения:</label>
+              <input name="field-date" id="fieldDate" value="2006-08-13" type="date" class="form-control" />
+          </div>
+
+          <div class="mb-3">
+              <label class="form-label d-block">Пол:</label> <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" checked="checked" name="radio-group-1" id="radioMale" value="Значение1">
+                  <label class="form-check-label" for="radioMale">Мужской</label>
+              </div>
+              <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="radio-group-1" id="radioFemale" value="Значение2">
+                  <label class="form-check-label" for="radioFemale">Женский</label>
+              </div>
+          </div>
+
+          <div class="mb-3">
+              <label for="fieldSelect" class="form-label">Ваш любимый язык программирования:</label>
+              <select name="field-name-4[]" id="fieldSelect" multiple="multiple" class="form-select">
+                  <option value="Значение1">Pascal</option>
+                  <option value="Значение2" selected="selected">C</option>
+                  <option value="Значение3" selected="selected">C++</option>
+                  <option value="Значение4" selected="selected">JavaScript</option>
+                  <option value="Значение5" selected="selected">PHP</option>
+                  <option value="Значение6" selected="selected">Python</option>
+                  <option value="Значение7" selected="selected">Java</option>
+                  <option value="Значение8" selected="selected">Haskel</option>
+                  <option value="Значение9" selected="selected">Clojure</option>
+                  <option value="Значение10" selected="selected">Prolog</option>
+                  <option value="Значение11" selected="selected">Scala</option>
+                </select>
+          </div>
+
+          <div class="mb-3">
+              <label for="fieldBio" class="form-label">Биография:</label>
+              <textarea name="field-name-2" id="fieldBio" class="form-control">тут ваша биография</textarea>
+          </div>
+
+          <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" checked="checked" name="check-1" id="checkAgreement">
+              <label class="form-check-label" for="checkAgreement">
+                  С контрактом ознакомлен(а)
+              </label>
+          </div>
+
+          <input type="submit" value="Сохранить" class="btn btn-primary" />
+          </form>
+  
+    </div>
+      </div> <!-- Конец формы -->
+
+      </div>
+        
+      
+
+
+    </main>
+
+    <footer class="custom-footer-bg text-dark py-4 mt-5 ">
+        
+        <div id="element_id" class="container text-center">
+            <p class="mb-1">Футер сайта</p>
+            <div>
+              <p>&copy Капитонов Павел 2025</p>
+            </div>
+        </div>
+
+    </footer>       
+    
+  </body>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
