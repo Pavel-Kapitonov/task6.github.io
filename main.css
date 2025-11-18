@@ -1,0 +1,114 @@
+.montserrat-alternates-regular {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-alternates-bold {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+    font-family: "Montserrat Alternates", sans-serif;
+    display: flex; 
+    
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+    margin: 0;
+}
+
+input, select, button {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 15px; 
+    border-radius: 7px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+
+#result {
+    position: fixed;        
+    top: 20px;              
+    left: 50%; 
+    transform: translateX(-50%); /* Сдвигает сам элемент на половину его ширины влево,
+                                    чтобы центрировать его */
+    z-index: 1000;
+
+    text-align: center;
+    padding: 10px 20px; 
+    width: auto;          
+    max-width: 90%;         
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+
+
+    display: none; 
+}
+
+.forma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;               
+    padding: 30px;
+
+    border-radius: 18px;
+    border: 2px solid #ddd;
+    background-color: #EDEFF2;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.input-row {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+#radios,
+#checkboxes {
+    width: 100%; 
+    max-width: 500px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.fields-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px;      
+}
+
+input[name="field1"] {
+    width: 60px;
+    height: 30px;
+    text-align: center;
+}
+
+#my-button {
+    width: 160px;
+    height: 40px;
+}
+
+select[name="select1"] {
+    width: 400px;
+    max-width: 80%;
+}
+
+#priceOutput {
+    margin-top: 0px;
+}
